@@ -1,0 +1,154 @@
+.title {
+  color: #962D3E;
+  text-align: center;
+  font-family: Helvetica Neue, Helvetica;
+}
+
+.page-title {
+  color: #962D3E;
+  padding-top: 8px;
+  padding-left: 2%;
+  font-size: 50px;
+  line-height: 1.5;
+  font-family: Helvetica Neue, Helvetica;
+}
+
+nav ul {
+  background-color: #962D3E;
+  overflow: hidden;
+}
+nav li {
+  display: inline;
+}
+
+nav li a {
+  float: left;
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: arial;
+  padding: 14px 14px 14px 14px;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  background-color: #F2EBC7;
+  color: #962D3E;
+  text-decoration: none;
+}
+
+.col {
+  display: block;
+  float: left;
+  width: 30%;
+  margin-left: 2.5%;
+}
+
+.col img {
+  width: 100%;
+}
+
+.col h3, p {
+  text-align: center;
+
+}
+
+button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: 1px solid #D9D9D9;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+button:hover {
+  background-color: #283075;
+  color: white;
+  cursor: pointer;
+}
+
+#download-1, #download-2, #download-3 {
+  margin-top: 2%;
+}
+
+/*MODIFY - COPIED FROM W3 TODO
+  https://www.w3schools.com/howto/howto_css_modals.asp
+*/
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /*padding-top: 100px; /* Location of the box */
+  left: 20%;
+  top: 15%;
+  /*width: 100%; /* Full width */
+  /*height: 100%; /* Full height */
+  background-color: black; /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal-1, #modal-2, #modal-3 {
+  background-color: #fefefe;
+  margin: auto;
+  /*padding: 5px;*/
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+  overflow: auto; /* Enable scroll if needed */
+}
+
+#close-1, #close-2, #close-3 {
+  z-index: 1;
+  color: #aaaaaa;
+  float: right;
+  margin-right: 2%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close-1:hover,
+#close-1:focus,
+#close-2:hover,
+#close-2:focus,
+#close-3:hover,
+#close-3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+  Adding scroll feature
+  https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+*/
+.content-header {
+  position: fixed;
+  z-index: -1; /*Below 'x'*/
+  width: 50%;
+  background-color: #f1f1f1;
+}
+
+.content-header h2 {
+  color: black;
+  text-align: center;
+}
+
+.bar-divider {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.content-body {
+  padding: 100px 0;
+  margin: 20px auto 0 auto;
+  width: 80%;
+}

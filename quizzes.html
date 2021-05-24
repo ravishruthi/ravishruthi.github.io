@@ -1,0 +1,134 @@
+<!-- -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Quizzes</title>
+    <link rel="stylesheet" href="quizzes.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1 class="title">what news?</h1>
+    <hr />
+    <h1 class="page-title">quizzes!</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="opinion.html">Opinion</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+      </ul>
+    </nav>
+
+    <!--
+      Referenced: https://www.w3schools.com/howto/howto_js_hover_tabs.asp
+      Used to figure out how to create tab like feature to view different
+      content.
+      <button id="firstlink">If you were a Spren?</button>
+      name="knightOrderForm" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" onsubmit="knightOrder()" method="get"
+    -->
+    <div class="tab">
+      <button id="secondlink">Knights Radient Order</button>
+    </div>
+
+    <div id="first" class="tabcontent">
+
+    </div>
+    <div id="second" class="tabcontent">
+      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" target="_blank" method="get">
+        <fieldset>
+          <legend>What Knights Radient Order would you belong to?</legend><br />
+          <label> Question 1: A robbery is playing out in a bank - what do you do?</label><br />
+            <label>
+              <input type="radio" name="robbery" value="a" />
+              Figure out a way to infiltrate and enter incognito to assess the situation.
+            </label><br />
+            <label>
+              <input type="radio" name="robbery" value="b" />
+              Storm in and save the people because it’s the honorable thing to do.
+            </label><br />
+            <label>
+              <input type="radio" name="robbery" value="c" />
+              Enforce the law or take the law of the land in your own hands but apprehending the robbers, because it is illegal to rob.
+            </label><br />
+            <label>
+              <input type="radio" name="robbery" value="d" />
+              Theorize on why the robbers became robbers and decided to rob on this day.
+            </label><br />
+          <br />
+          <label> Question 2: If you had to pick a word that describes you, just one word, what would it be?</label><br />
+            <label>
+              <input type="radio" name="word" value="a" />
+              Honest
+            </label><br />
+            <label>
+              <input type="radio" name="word" value="b" />
+              Protector
+            </label><br />
+            <label>
+              <input type="radio" name="word" value="c" />
+              Just
+            </label><br />
+            <label>
+              <input type="radio" name="word" value="d" />
+              Wise
+            </label><br />
+            <label>
+              <input type="radio" name="word" value="e" />
+              Empathetic
+            </label><br />
+            <br />
+            <label> Question 3: What gemstone do you find yourself gravitating towards?</label><br />
+              <label>
+                <input type="radio" name="gemstone" value="a" />
+                Garnet
+              </label><br />
+              <label>
+                <input type="radio" name="gemstone" value="b" />
+                Sapphire
+              </label><br />
+              <label>
+                <input type="radio" name="gemstone" value="c" />
+                Smokestone
+              </label><br />
+              <label>
+                <input type="radio" name="gemstone" value="d" />
+                Zircon
+              </label><br />
+              <label>
+                <input type="radio" name="gemstone" value="e" />
+                Diamond
+              </label><br />
+              <br />
+              <label> Question 4: If you had a power, what would it be?</label><br />
+                <label>
+                  <input type="radio" name="power" value="a" />
+                  Ability to change your apperance
+                </label><br />
+                <label>
+                  <input type="radio" name="power" value="b" />
+                  Ability to fly
+                </label><br />
+                <label>
+                  <input type="radio" name="power" value="c" />
+                  Teleportation
+                </label><br />
+                <label>
+                  <input type="radio" name="power" value="d" />
+                  Ability to heal people
+                </label><br />
+              <br />
+            <input type="submit" id="submit" value="Submit"/>
+        </fieldset>
+      </form>
+      <div id="result">
+        <h2 id="order"></h2>
+        <h3 id="powers"></h3>
+      </div>
+    </div>
+
+    <script src="quizzes.js"></script>
+  </body>
+</html>
