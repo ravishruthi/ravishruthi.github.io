@@ -20,7 +20,7 @@
     <hr />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="opinion.html">Opinion</a></li>
         <li><a href="quizzes.html">Quizzes</a></li>
