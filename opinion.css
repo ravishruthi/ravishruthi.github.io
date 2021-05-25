@@ -28,8 +28,8 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #F2EBC7;
-  color: #962D3E;
+  background-color: #BF7373;
+  color: white;
   text-decoration: none;
 }
 
@@ -49,15 +49,15 @@ nav li a:hover {
   float: left;
   margin-left: 8px;
   border: 1px solid #D9D9D9;
-  background-color: #F3F3F3;
+  background-color: #083439;/*#F3F3F3;*/
   width: 25%;
   height: 80vh;
 }
 
 .tab button {
   display: block;
-  background-color: #F3F3F3;
-  color: black;
+  background-color: #083439; /*#F3F3F3;*/
+  color: white;
   padding: 50px 50px 50px;
   width: 100%;
   border: none;
@@ -68,7 +68,8 @@ nav li a:hover {
 }
 
 button:hover {
-  background-color: white;
+  color: #083439;
+  background-color: #9BB8AD;
 }
 
 .tabcontent {
@@ -105,4 +106,8 @@ button:hover {
 #third {
   margin-left: 25%;
   position: absolute;
+}
+
+.url {
+  font-size: 10px;
 }

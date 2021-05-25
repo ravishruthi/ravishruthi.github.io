@@ -28,8 +28,8 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #F2EBC7;
-  color: #962D3E;
+  background-color: #BF7373;
+  color: white;
   text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ button {
 }
 
 button:hover {
-  background-color: #283075;
+  background-color: #083439; /*#283075;*/
   color: white;
   cursor: pointer;
 }
@@ -150,4 +150,8 @@ button:hover {
 .content-body {
   margin: 5px auto 5px auto;
   width: 80%;
+}
+
+.url {
+  font-size: 10px;
 }

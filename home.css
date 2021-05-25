@@ -22,8 +22,8 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #F2EBC7;
-  color: #962D3E;
+  background-color: #BF7373;
+  color: white;
   text-decoration: none;
 }
 
@@ -70,4 +70,8 @@ nav li a:hover {
 
 .left, .right {
   background: none !important;
+}
+
+.url {
+  font-size: 10px;
 }
