@@ -45,7 +45,11 @@
     </div>
 
     <div id="second" class="tabcontent">
-      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+      <!-- IMPORTANT!!!!
+        I have action open in a NEW tab which prevents the request from showing up in
+        network tab in chrome. It does, however, send the GET request. Hopefully not an issue.
+      -->
+      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" target="_blank" method="get">
         <fieldset>
           <legend>What Knights Radient Order would you belong to?</legend><br />
           <label> Question 1: A robbery is playing out in a bank - what do you do?</label><br />
