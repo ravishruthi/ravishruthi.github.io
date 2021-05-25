@@ -30,8 +30,10 @@ function createNewButton(parent, button_name, button) {
   return new_button;
 }
 
-// Referenced to have article pop up on same window
-// https://www.w3schools.com/howto/howto_css_modals.asp
+// Referenced - https://www.w3schools.com/howto/howto_css_modals.asp
+// Used to have article pop up on same window
+// All I did was change the modal that had initially set display to be none (hidden)
+// to block which would make it visible when button was clicked.
 function openArticle1() {
   document.getElementById("modal-1").style.display = 'block';
 }
@@ -56,9 +58,14 @@ function closeArticle3() {
   document.getElementById("modal-3").style.display = 'none';
 }
 
-// Referenced: https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
-// Used and modified code to get innerText from p tag and download it into a .txt file
-// *TODOOOOOO
+/*
+ * Referenced: https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
+ *  Used and modified code to get innerText from p tag and download it into a .txt file
+ * sets the href attribute for the new a element -> encodes the text passed in to be a plain text
+ * sets another attribute, download, for the a element indicating that when clicked, the link in href should download.
+ * hides the element and makes it child of the body.
+ * element.click() is what sets of the download of the specfic article.
+*/
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -66,7 +73,6 @@ function download(filename, text) {
 
     element.style.display = 'none';
     document.body.appendChild(element);
-
     element.click();
 
     document.body.removeChild(element);

@@ -1,15 +1,24 @@
-<!-- -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>News</title>
     <link rel="stylesheet" href="news.css" type="text/css">
+    <!--
+      Decided to incorporate bootstrap into every page MAINLY for the way it incorporated
+      a specific font for the title (what news, and subpage titles), the line divider look,
+      and other stylistic aspects. I did not use it to ease up criteria listed (I made sure to
+      use html/css/javascript explicitly for all of that), EXCEPT for carousel on home
+      page. That was from bootstrap.
+    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!--
+      * Reference citation exact same as one provided in index.html *
+    -->
     <h1 class="title">what news?</h1>
     <hr />
     <h1 class="page-title">current events</h1>
@@ -25,7 +34,16 @@
     <!--
       Referenced: https://www.w3schools.com/howto/howto_css_modals.asp ,
       https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
-        Used both sites to help structure and layout the scrolling, popup modal
+        Used both sites to help structure and layout the scrolling, popup modal.
+        Used code provided to structure the layout of the scrolling, popup modal.
+        - Each div class col has the 'article' that I want to display. In css, I used
+        the class attribute '.col' to make sure that it would have 30% width, therefore
+        fitting three columns per row.
+        ** Functionality of buttons described in depth in news.js file
+        - I had two buttons, one to view the article, which would pop up when clicked.
+        The download button would download the contents of the article.
+        - The &times is the x sign, which allows user to close popup.
+        !** This is for all <div class=col> **!
     -->
     <div class="row">
       <div class="col" id="col-1">

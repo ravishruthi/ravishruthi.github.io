@@ -1,7 +1,6 @@
 .title {
   color: #962D3E;
   text-align: center;
-  font-family: Helvetica Neue, Helvetica;
 }
 
 .page-title {
@@ -9,8 +8,6 @@
   padding-top: 8px;
   padding-left: 2%;
   font-size: 50px;
-  line-height: 1.5;
-  font-family: Helvetica Neue, Helvetica;
 }
 
 nav ul {
@@ -23,11 +20,9 @@ nav li {
 
 nav li a {
   float: left;
-  margin: auto;
   text-decoration: none;
   color: white;
   text-align: center;
-  font-family: arial;
   padding: 14px 14px 14px 14px;
   font-size: 18px;
 }
@@ -40,12 +35,15 @@ nav li a:hover {
 
 /*
   Referenced: https://www.w3schools.com/howto/howto_js_hover_tabs.asp
-  Used this to create the side tab like content for this page, without hover feature.
+  - Used this to create the side tab like content for this page, without hover feature.
+  - Most of the style was straight forward and the example provided was preferred by me
+  so I used it. I modified the padding, width, height and etc. to fit with my website.
+  I also slightly adjusted the gray color.
 */
 
 /*
   https://stackoverflow.com/questions/11516291/css-get-height-of-screen-resolution
-    How to get height to be according to window size.
+    How to get height to be according to window size, using vh.
 */
 .tab {
   float: left;

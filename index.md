@@ -1,10 +1,16 @@
-<!-- -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="home.css" type="text/css">
+    <!--
+      Decided to incorporate bootstrap into every page MAINLY for the way it incorporated
+      a specific font for the title (what news, and subpage titles), the line divider look,
+      and other stylistic aspects. I did not use it to ease up content addition (I made sure to
+      use html/css/javascript explicitly for almost all of that), EXCEPT for carousel on home
+      page. That was from bootstrap.
+    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -13,6 +19,9 @@
     <!--
       Referenced How To W3 school to figure out how to set up navigation background
         https://www.w3schools.com/howto/howto_js_topnav.asp
+        The navigation is a unordered list, which has a link to each of my html pages.
+        The nav tag helps mainly so that in the css file, I can reference the unordered list
+        specifially for navigation, in the case that I have many uls.
       Found <hr /> to insert that thin line divide
         https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp
     -->
@@ -34,7 +43,7 @@
         Mainly to find another site that explained the way bootstrap carousel works.
     -->
     <!--
-      Creates a div with a unique id for this carousel. This is useful especially
+      Creates a div with a unique id for this carousel. This is important, especially
       if I decided to have more than one carousel.
       class 'carousel' specifies that this contains a carousel and slide brings
       in the sliding aspect that is provided. 'data-ride' allows for the animation
@@ -86,6 +95,7 @@
         and next slide; the span with "sr-only" is added for those who have screen
         readers (for those who cannot view or click the arrows) will have it show
         up as Previous or Next.
+
         The a element allows for use, as users, to click on the arrow and be
         able to go to the next slide or prev slide. Without it, the transition still
         works, but we can't manually get to the next slide.

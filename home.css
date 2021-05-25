@@ -6,7 +6,7 @@
 
 nav ul {
   background-color: #962D3E;
-  overflow: hidden;
+  overflow: hidden; /*makes sure that if it is greater than size, it will be hidden*/
 }
 nav li {
   display: inline;
@@ -14,11 +14,9 @@ nav li {
 
 nav li a {
   float: left;
-  margin: auto;
   text-decoration: none;
   color: white;
   text-align: center;
-  font-family: arial;
   padding: 14px 14px 14px 14px;
   font-size: 18px;
 }

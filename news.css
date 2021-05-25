@@ -1,7 +1,6 @@
 .title {
   color: #962D3E;
   text-align: center;
-  font-family: Helvetica Neue, Helvetica;
 }
 
 .page-title {
@@ -9,8 +8,6 @@
   padding-top: 8px;
   padding-left: 2%;
   font-size: 50px;
-  line-height: 1.5;
-  font-family: Helvetica Neue, Helvetica;
 }
 
 nav ul {
@@ -23,11 +20,9 @@ nav li {
 
 nav li a {
   float: left;
-  margin: auto;
   text-decoration: none;
   color: white;
   text-align: center;
-  font-family: arial;
   padding: 14px 14px 14px 14px;
   font-size: 18px;
 }
@@ -79,36 +74,41 @@ button:hover {
   margin-top: 2%;
 }
 
-/*MODIFY - COPIED FROM W3 TODO
-  https://www.w3schools.com/howto/howto_css_modals.asp
+/*
+  Referenced: https://www.w3schools.com/howto/howto_css_modals.asp
+  - display: none -> helps make sure the modal only is visible when button is clicked.
+  - position: absolute -> makes sure it is positioned in same place while window size
+  changes or if user is scrolling down. Will be relative to the page.
+  - z-index: 1 -> gives priority to modal to be on top.
 */
 .modal {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  /*padding-top: 100px; /* Location of the box */
+  display: none;
+  position: absolute;
+  z-index: 0;
   left: 20%;
   top: 15%;
-  /*width: 100%; /* Full width */
-  /*height: 100%; /* Full height */
-  background-color: black; /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+/*
+  - margin: auto -> centers it on window.
+  - border -> 1px thick, solid border, color of border
+  Adding scroll feature: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+  - Referenced the css portion for this and added the styles, but modified it for what worked
+  on my website.
+  - overflow: auto -> if there is overflow of text, will make sure to add a scroll bar.
+*/
 #modal-1, #modal-2, #modal-3 {
   background-color: #fefefe;
   margin: auto;
-  /*padding: 5px;*/
   border: 1px solid #888;
   width: 50%;
   height: 50%;
-  overflow: auto; /* Enable scroll if needed */
+  overflow: auto;
 }
 
 #close-1, #close-2, #close-3 {
-  z-index: 1;
-  color: #aaaaaa;
   float: right;
+  color: #aaaaaa;
   margin-right: 2%;
   font-size: 28px;
   font-weight: bold;
@@ -122,17 +122,14 @@ button:hover {
 #close-3:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer; /*Adds the pointer icon when over the 'x'*/
 }
 
 /*
-  Adding scroll feature
-  https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+  - width: 100% -> The entire width of the modal
 */
 .content-header {
-  position: fixed;
-  z-index: -1; /*Below 'x'*/
-  width: 50%;
+  width: 100%;
   background-color: #f1f1f1;
 }
 
@@ -147,8 +144,10 @@ button:hover {
   background: #ccc;
 }
 
+/*
+  - margin -> 5px from top and bottom, auto for left and right
+*/
 .content-body {
-  padding: 100px 0;
-  margin: 20px auto 0 auto;
+  margin: 5px auto 5px auto;
   width: 80%;
 }
